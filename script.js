@@ -1,3 +1,7 @@
+
+var letterA = ['a']
+var letterB = ['b']
+
 document.addEventListener('keydown', logKey)
 
 function logKey(e){
