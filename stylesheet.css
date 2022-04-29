@@ -1,0 +1,123 @@
+img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    display: none;
+}
+
+#engoutput{
+    position: absolute;
+}
+
+#bayoutput{
+    position: absolute;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #F2F2F2;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+  }
+  
+  a:hover {
+    color: black;
+    transition-duration: 0.3s;
+  }
+  
+  .try a {
+      color: black;
+  }
+  
+  @font-face { 
+      font-family: 'Matatas One';
+      src: url('assets/MatatasOne-Bold.woff2') format('woff2'), url('assets/MatatasOne-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  
+  .message  {
+    position: absolute;
+    top: 7rem;
+    left: 11rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 55rem;
+    color: rgb(148, 148, 148);
+  }
+  
+  .tryout {
+      width: 70vw;
+      margin: 10rem;
+      margin-top: 15rem;
+  }
+  
+  #bayoutput {
+      padding: 0;
+      word-wrap: break-word;
+      text-align:left;
+      align-items: left;
+      font-family: 'Matatas One';
+      font-size: 15vh;
+      z-index: 1;
+      line-height: 20rem;
+      position: absolute;
+      
+  } 
+  
+  #engoutput {
+      position: absolute;
+      margin-top: -8rem;
+      padding: 0;
+  }
+  
+  .result {
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 0;
+      letter-spacing: 0.5rem;
+      width: 10rem;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      word-wrap: break-word;
+      z-index: 9;
+      line-height: 20rem;
+      color: #F2BD1D;
+  }
+  
+  span.inner {
+    border-bottom: 1px black solid;
+    padding-bottom: 2rem;
+  }
+  
+  #nav {
+    margin: 10rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: absolute;
+    top: 0rem;
+    width: 85vw;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid black;
+  
+  
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
