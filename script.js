@@ -19,6 +19,11 @@ $(document).ready(function () {
     //keydown is for function keys, keypress is for letters and numbers
     $(document).on("keydown", function (e) {
         //if pressed key is a backspace
+        console.log(e.keyCode)
+        // Q 81 W 87 E 69 R 82 T 84  Y 89 U 85  I 73 O 79 P 80 A 65 S 83 D 68  F 70 G 71 H 72 J 74 K 75 L 76 Z 90
+        // X 88 C 67 V 86 B 66  N 78 M 77
+        var html='<img src="images/'+e.keyCode+'.png" class="letterImg"/>'
+        $('#result').append(html)
         if (e.which == 8) {
             e.preventDefault();
             entryCount++;
