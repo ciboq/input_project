@@ -15,9 +15,6 @@ $(document).ready(function () {
         const html= new Array('<img src="images/'+e.keyCode+'.png" class="letterImg'+e.keyCode+' " id="lettrimg"/>')
         $('#result').append(html) 
 
-        //translate unicode to characters 
-        //https://unicodelookup.com/       
-         
         console.log("entry #" + entryCount + " : " + e.which + ". Showing " + displayCount);
     });
 
