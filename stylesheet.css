@@ -50,8 +50,12 @@ html {
   }
   
   .tryout {
-    position:fixed;
-      width: 70vw;
+    position:absolute;
+    z-index: 3;
+    top: 30vh;
+    left: 36vw;
+      width: 550px;
+      height: 350px;
       margin: 10rem;
       margin-top: 15rem;
   }
@@ -75,54 +79,32 @@ html {
       padding: 0;
   }
   
-  .result {
-      font-size: 2rem;
-      font-weight: 600;
-      padding: 0;
-      letter-spacing: 0.5rem;
-      width: 10rem;
-      text-align: center;
-      align-content: center;
-      align-items: center;
-      word-wrap: break-word;
-      z-index: 9;
-      line-height: 20rem;
-      color: #F2BD1D;
-  }
-  
   span.inner {
     border-bottom: 1px black solid;
     padding-bottom: 2rem;
   }
   
   .letterImg{
+    position:relative;
     width: 40px;
     height: 40px;
     display: inline-block;
+    z-index: -1;
   }
-
-.letterImg119{
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-}
-
-.letterImg97{
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-}
 
 .background_image{
   position:fixed;
   width:100vw;
   height:100vh;
-  z-index: 2;
 }
 
 .imagee{
-  position:fixed;
+  display: block;
+  margin:0;
+  border: 0;
+  position:absolute;
   width:100vw;
   height:100vh;
-  z-index: 2;
+  z-index: -2;
 }
+
