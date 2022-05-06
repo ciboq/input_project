@@ -13,6 +13,8 @@ $(document).ready(function () {
         console.log(e.keyCode)
         // Q 81 W 87 E 69 R 82 T 84  Y 89 U 85  I 73 O 79 P 80 A 65 S 83 D 68  F 70 G 71 H 72 J 74 K 75 L 76 Z 90
         // X 88 C 67 V 86 B 66  N 78 M 77
+        // 97 a 98 b 99 c 100 d 101 e 102 f 103 g 104 h 105 i 106 j 107 k 108 l 109 m 110 n 111 o 112 p 113 q 114 r 
+        // 115 s 116 t 117 u 118 v 119 w 120 x 121 y 122 z
         const html= new Array('<img src="images/'+e.keyCode+'.png" class="letterImg" id="lettrimg"/>')
         $('#result').append(html) 
 
@@ -48,6 +50,8 @@ function deleteElement() {
     $(".result").last().remove();
 }
 
+document.getElementById("inputField").innerHTML += "hello";
+console.log(inputField)
 
 
 
