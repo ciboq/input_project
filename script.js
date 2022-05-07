@@ -18,6 +18,10 @@ $(document).ready(function () {
         const html= new Array('<img src="images/'+e.keyCode+'.png" class="letterImg" id="lettrimg"/>')
         $('#result').append(html) 
 
+        var char = String.fromCharCode(e.which);
+        const input=new Array('<p class="inputletterss" id="inputSpace">'+char+'</p>')
+        $('#inputField').append(input)
+
         console.log("entry #" + entryCount + " : " + e.which + ". Showing " + displayCount);
     });
 
@@ -32,12 +36,21 @@ $(document).ready(function () {
             displayCount--;
             console.log("entry #" + entryCount + " : " + e.which + " | BKSP. Showing " + displayCount);
             $(".letterImg").last().remove();
+            $(".inputletterss").last().remove();
         }
 
         else if (e.which == 13){
             e.preventDefault();
             const result = document.getElementById("result")
             result.innerHTML += `<br/>` 
+            const textResult = document.getElementById("inputField")
+            textResult.innerHTML += `<br/>`
+        }
+
+        else if(e.which == 32){
+            e.preventDefault();
+            const space = document.getElementById("inputField")
+            space.innerHTML += `&nbsp &nbsp` 
         }
 
 
@@ -45,13 +58,21 @@ $(document).ready(function () {
 
 });
 
+
 function deleteElement() {
     $(".inner").last().remove();
     $(".result").last().remove();
 }
 
-document.getElementById("inputField").innerHTML += "hello";
-console.log(inputField)
+// const inputField = document.querySelector('.input_field')
+// function generateContent() {
+//     inputField.innerHTML += `
+//     <div class="hah">hi</div>
+//     ` 
+// }
+
+
+
 
 
 

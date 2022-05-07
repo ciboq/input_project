@@ -236,11 +236,10 @@ input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     z-index: 99;
     height: 100%;
-    width: 100%;
-    top: 85vh;
+    bottom: 5vh;
     left: 60px;
     height: 22px;
     width: 70px;
@@ -297,4 +296,45 @@ h3{
   font-size: 20pt;
 }
 
+.input_field{
+  position: absolute;
+  display:inline-block;
+  width:100vw;
+  top:50vh;
+  left:10vw;
+  height:40vh;
+  z-index: -2;
+}
 
+.inputletterss{
+  display:inline-block;
+  content: "";
+  margin-top: 0;
+  font-size: 20pt;
+  line-height: 5pt;
+}
+
+button{
+  z-index: 5;
+  position:relative;
+  top:92vh;
+  left:88vw;
+  font-size: 40px;
+  font-family: UglyByte;
+  background-color: rgb(255, 159, 173);
+  color:white;
+  border: none;
+  width:80px;
+  height:40px;
+}
+
+.button_container{
+  z-index: 5;
+  position: fixed;
+  display: block;
+}
+
+@font-face{
+  font-family: "UglyByte";
+  src: url("Ugly\ Byte\ Free\ Trial-80da.woff") format('woff');
+}
